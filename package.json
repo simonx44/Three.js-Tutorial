@@ -1,0 +1,24 @@
+{
+  "name": "three.js-typescript-tutorila",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "translateServer": "tsc -p ./src/server/",
+    "translateClient": "tsc -p ./src/client/",
+    "dev" : "concurrently -k \"tsc -p ./src/server -w\" \"nodemon ./dist/server/server.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27",
+    "express": "^4.17.1",
+    "three": "^0.119.1",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
