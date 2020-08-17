@@ -2,24 +2,28 @@
 <html>
 
 <head>
-  <style>
-    body {
-      overflow: hidden;
-      margin: 0px;
-
-    }
-
-    .c {
-      width: 200px;
-      height: 200px;
-    }
-  </style>
-  <title>Three.js TypeScript Tutorials by Sean Bradley</title>
+    <title>Three.js TypeScript Tutorials by Sean Bradley</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0px;
+        }
+        #debug1 {
+            position: absolute;
+            left: 0px;
+            top: 50px;
+            border: 1px solid red;
+            width: 170px;
+            height: 400px;
+            color: white;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
-  <!--<canvas id="c1" class="c"></canvas>-->
-  <script type="module" src="client.js"></script>
+    <div id="debug1"></div>
+    <script type="module" src="client.js"></script>
 </body>
 
 </html>
